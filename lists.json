@@ -1,0 +1,96 @@
+[{
+  "name": "Nagłówek drzewa wielowierszowy",
+  "type": "header",
+  "list": [
+    {
+      "name": "Pododział 1",
+      "type": "branch",
+      "inputType": "radio",
+      "list": [
+        {
+          "name": "Zespół 1",
+          "type": "team",
+          "subname": "HR",
+          "inputType": "checkbox"
+        },
+        {
+          "name": "Zespół 2",
+          "type": "team",
+          "subname": "Marketing",
+          "inputType": "checkbox"
+        },
+        {
+          "name": "Zespół 3",
+          "type": "team",
+          "subname": "Analitycy",
+          "inputType": "checkbox",
+          "list": [
+            {
+              "name": "Podzespół 3.1",
+              "subname": "Kalendarz"
+            },
+            {
+              "name": "Podzespół 3.2",
+              "subname": "Kokpit"
+            },
+            {
+              "name": "Podzespół 3.3",
+              "subname": "Widok"
+            },
+            {
+              "name": "Podzespół 3.4",
+              "subname": "Różności"
+            },
+            {
+              "name": "Podzespół 3.5",
+              "subname": "Szukaj"
+            }
+          ]
+        },
+        {
+          "name": "Zespół 4",
+          "type": "team",
+          "subname": "Programiści",
+          "inputType": "checkbox",
+          "list": [
+            {
+              "name": "Podzespół 4.1",
+              "subname": "Front-end"
+            },
+            {
+              "name": "Podzespół 4.1",
+              "subname": "Middle-front-end"
+            },
+            {
+              "name": "Podzespół 4.1",
+              "subname": "Middle-end"
+            },
+            {
+              "name": "Podzespół 4.1",
+              "subname": "Middle-back-end"
+            },
+            {
+              "name": "Podzespół 4.1",
+              "subname": "Back-end"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pododział 2",
+      "type": "branch",
+      "inputType": "radio"
+    },
+    {
+      "name": "Pododział 3",
+      "type": "branch",
+      "inputType": "radio"
+    },
+    {
+      "name": "Niezrzeszeni",
+      "type": "branch",
+      "inputType": "radio"
+    }
+  ]
+}]

@@ -1,0 +1,76 @@
+$fontSize: 1rem;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 50px;
+}
+
+ul {
+  list-style: none;
+  margin: 0 0 0 $fontSize;
+}
+
+li {
+  font-size: $fontSize;
+  overflow-y: hidden;
+  max-height: 0;
+  transition: max-height 0.2s;
+  cursor: default;
+  position: relative;
+}
+
+i {
+  position: absolute;
+  top: 0;
+  left: -$fontSize;
+  color: rgb(0, 179, 255);
+  font-size: $fontSize;
+}
+
+i.circle {
+  border-radius: 50%;
+}
+
+input {
+  visibility: hidden;
+}
+
+li.header {
+  max-height: 4000px;
+  overflow-y: visible;
+}
+
+.active > ul > li {
+  max-height: 4000px;
+  transition: max-height 1s;
+  overflow-y: visible;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(-#{$fontSize} - #{$fontSize} / 2);
+    height: 100%;
+    width: 0.1rem;
+    background-color: grey;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: calc(#{$fontSize} / 2);
+    left: calc(-#{$fontSize} - #{$fontSize} / 2);
+    height: 0.1rem;
+    width: calc(#{$fontSize} / 2);
+    background-color: grey;
+  }
+
+  &:last-child:before {
+    height: calc(#{$fontSize} / 2);
+  }
+}
